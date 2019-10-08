@@ -1,0 +1,78 @@
+﻿@page "{id:int?}"
+@model MvcMovie.Pages.SalesReport.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].OrderQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].UnitPriceDiscount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].LineTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].Rowguid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].ModifiedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].Product)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesOrderDetail[0].SalesOrder)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.SalesOrderDetail) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPriceDiscount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LineTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rowguid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesOrder.SalesOrderNumber)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

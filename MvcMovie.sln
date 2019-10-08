@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "MvcMovie.csproj", "{7F3C3923-C94C-4024-9028-DE02C298A310}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie.tests", "..\MvcMovie.tests\MvcMovie.tests.csproj", "{EA66B3F0-7DCB-4375-8DFC-5CEB9C8F2A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAPI", "..\MvcAPI\MvcAPI.csproj", "{4A83FF0C-6EE6-47CF-B489-A0BA9B4B89FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F3C3923-C94C-4024-9028-DE02C298A310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3C3923-C94C-4024-9028-DE02C298A310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3C3923-C94C-4024-9028-DE02C298A310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3C3923-C94C-4024-9028-DE02C298A310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA66B3F0-7DCB-4375-8DFC-5CEB9C8F2A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA66B3F0-7DCB-4375-8DFC-5CEB9C8F2A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA66B3F0-7DCB-4375-8DFC-5CEB9C8F2A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA66B3F0-7DCB-4375-8DFC-5CEB9C8F2A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A83FF0C-6EE6-47CF-B489-A0BA9B4B89FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A83FF0C-6EE6-47CF-B489-A0BA9B4B89FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A83FF0C-6EE6-47CF-B489-A0BA9B4B89FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A83FF0C-6EE6-47CF-B489-A0BA9B4B89FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C91FC7BA-A13F-45F8-8B2A-CAF54A200025}
+	EndGlobalSection
+EndGlobal
